@@ -35,7 +35,7 @@ CREATE TABLE IF NOT EXISTS summaries (
 );
 
 CREATE INDEX IF NOT EXISTS idx_notes_company ON notes(company_id);
-CREATE INDEX IF NOT EXISTS idx_summaries_company ON summaries(company_id);
+CREATE UNIQUE INDEX IF NOT EXISTS idx_summaries_company ON summaries(company_id);
 """
 
 # ── Company definitions ───────────────────────────────────────────────────────
