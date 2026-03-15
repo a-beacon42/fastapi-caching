@@ -1,0 +1,14 @@
+[project]
+name = "fastapi-caching"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi>=0.115.0",
+    "uvicorn[standard]>=0.30.0",
+    "pydantic>=2.0",
+    "pydantic-settings",
+    "aiosqlite>=0.20.0",
+    "openai>=2.28.0",
+]
