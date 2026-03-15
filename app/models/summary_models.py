@@ -14,7 +14,7 @@ class Summary(BaseModel):
 class SummaryRequest(BaseModel):
     prompt_version: str
     system_message: str
-    user_message: str  # concatenated list of input docs
+    user_message: str
 
 
 class SummaryResponse(BaseModel):
